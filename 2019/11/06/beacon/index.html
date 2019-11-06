@@ -5,19 +5,19 @@
   
 
   
-  <title>helloccit | Hexo</title>
+  <title>beacon | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="你好hello">
+  <meta name="description" content="STM32Cube Mx蓝牙功能的相关配置一、打开STM32Cube进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。二、选择芯片点击File里的N">
 <meta property="og:type" content="article">
-<meta property="og:title" content="helloccit">
-<meta property="og:url" content="http://yoursite.com/2019/10/17/helloccit/index.html">
+<meta property="og:title" content="beacon">
+<meta property="og:url" content="http://yoursite.com/2019/11/06/beacon/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="你好hello">
+<meta property="og:description" content="STM32Cube Mx蓝牙功能的相关配置一、打开STM32Cube进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。二、选择芯片点击File里的N">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-17T06:30:20.299Z">
+<meta property="og:updated_time" content="2019-11-06T12:25:16.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="helloccit">
-<meta name="twitter:description" content="你好hello">
+<meta name="twitter:title" content="beacon">
+<meta name="twitter:description" content="STM32Cube Mx蓝牙功能的相关配置一、打开STM32Cube进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。二、选择芯片点击File里的N">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-helloccit" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-beacon" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/10/17/helloccit/" class="article-date">
-  <time datetime="2019-10-17T06:26:37.000Z" itemprop="datePublished">2019-10-17</time>
+    <a href="/2019/11/06/beacon/" class="article-date">
+  <time datetime="2019-11-06T12:16:27.000Z" itemprop="datePublished">2019-11-06</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      helloccit
+      beacon
     </h1>
   
 
@@ -86,12 +86,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>你好hello</p>
+        <p>STM32Cube Mx蓝牙功能的相关配置<br>一、打开STM32Cube<br>进入页面，在最上方的help中打开Manage embedded software packages，下载STM32F4型号1.24.1版本的固件包，然后再进入STMicroelectronics，下载X_CUBU_BLE1里的最新版本固件包（4.4.0）和X_CUBU_MEMS1的6.2.0固件包。<br>二、选择芯片<br>点击File里的New Project，进入后在左上方可搜索所需要的芯片型号，大家可根据自己的需要进行选择，我们这里用的是STM32F401RETx。<br>三、芯片的配置<br>1.点击Clock Configuration下方的Additional Software，按下图所示进行配置，设置完后点右下方的OK确定。</p>
+<p>2.在System Core的SYS中进行配置</p>
+<p>3.在Connectivity中配置全双工模式和串口的异步通行模式。把SPI1里的Mode的模式改为Full_Duplex Master(全双工模式)，并在其下方的Parameter Settings里配置时钟数。</p>
+<p>在USART1的Mode里选择Asynchronous(异步模式)</p>
+<p>4.在左下角点击Additional Software，进入STMicroelectronics.X_CUBU_BLE1.4.4.0</p>
+<p>5.选择芯片上方的System view里的GPIO</p>
+<p>四、进入工程<br>在Project Manager里设置文件名，文件位置（工程名和 工程存储路径不要用中文，不然容易出错），最后点GENERATE CODE进入工程。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/17/helloccit/" data-id="ck2n9aaye0000zcuwy9sdjnkx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/06/beacon/" data-id="ck2n9aayn0001zcuwd85ih58x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -100,19 +106,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/11/06/搭建个人博客/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          搭建个人博客
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/11/06/搭建个人博客/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">搭建个人博客</div>
     </a>
   
 </nav>
